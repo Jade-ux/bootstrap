@@ -1,0 +1,22 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.alert-container {
+}
+
+.callout-container {
+  /*this is an experimental or modern way of creating height - it means your container will be 100% the height of the viewport*/
+  height: 100vh;
+  background: url("https://cdn.pixabay.com/photo/2014/04/05/11/20/whiskey-315178__340.jpg") no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.quotes-container {
+}
+
+.features-container {
+}
