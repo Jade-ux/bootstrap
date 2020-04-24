@@ -2,7 +2,18 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-.alert-container {
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    color: #4e1105;
+    background-color: #f5d266;
+    border-color: #f5d266;
 }
 
 .callout-container {
@@ -13,10 +24,118 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /*This makes sure the opaque-overlay stretches to the bottom of the container. Google relative parents with absolute children to find out why*/
+  position: relative;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .quotes-container {
 }
 
 .features-container {
+}
+
+/*Block dividers*/
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: #d39e00;
+}
+
+.block-divider-orange {
+    background-color: #f05f40;
+}
+
+.block-divider-short {
+    width: 35px;
+}
+
+/*Navbar*/
+
+.navalert-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar .navbar-nav a{
+    font-weight: 700;
+}
+
+/*Jumbotron*/
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron-header {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 150px;
+}
+
+.jumbotron small {
+    font-size:60%;
+    font-style: italic;
+    color: #d0d0d0;
+}
+
+.jumbotron .lead {
+    color: #fffef2;
+}
+
+/*Buttons*/
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+}
+
+.btn--red {
+    color: white;
+    background-color: #f05f40;
+    border-color: #f05f40;
+}
+
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
+    background-color: #892712;
+    border-color: #892712;
 }
